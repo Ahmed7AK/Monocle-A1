@@ -1,0 +1,79 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: white;
+    background-image: url('./images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    margin: 0% 10% 0% 10%;
+}
+header img {
+    width: 100px;
+}
+#header-links {
+    display: flex;
+    gap: 100px;
+}
+#header-links a {
+    font-size: 20px;
+    font-weight: bold;
+}
+#hero-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2% 10% 2% 10%;
+}
+#hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+#hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+#hero-text h1 {
+    font-size: 50px;
+}
+#hero-links {
+    display: flex;
+    gap: 50px;
+}
+#hero-links a{
+    width: 200px;
+}
+#download-link {
+    padding: 15px;
+    background-color: #7F2982;
+    border-radius: 10px;
+    text-align: center;
+}
+#learn-more {
+    padding: 15px;
+    background-color: none;
+    border: 2px solid white;
+    text-align: center;
+    border-radius: 10px;
+}
+#hero-img img{
+    width: 300px;
+}
+@media only screen and (max-width: 1000px) {
+    #hero-section {
+        flex-direction: column;
+    }
+}
