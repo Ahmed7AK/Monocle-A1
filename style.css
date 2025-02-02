@@ -7,11 +7,9 @@
     margin: 0;
 }
 body {
-    background-color: white;
-    background-image: url('./images/background.png');
+    background-color: #140021;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 5000px;
 }
 header {
     display: flex;
@@ -110,7 +108,7 @@ header img {
 #features-div {
     display: flex;
     flex-direction: column;
-    margin: 0% 10% 0% 10%;
+    margin: 0% 15% 0% 15%;
 }
 #features-div h1 {
     padding: 50px;
@@ -131,8 +129,8 @@ header img {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 240px;
-    height: 300px;
+    width: 200px;
+    height: 280px;
     border-radius: 30px;
 }
 #feature-card h2 {
@@ -143,6 +141,108 @@ header img {
     font-size: 14px;
     text-align: center;
 }
+
+.use-cases-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    margin: 10% 10% 10% 10%;
+}
+
+.use-case-card {
+    background-color: transparent;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateY(-5px);
+}
+
+.use-case-icon {
+    font-size: 40px;
+    color: #7F2982;
+    margin-bottom: 15px;
+}
+
+.use-case-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #7F2982;
+}
+
+.use-case-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+}
+.cta-section {
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.app-screenshot {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.store-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.download {
+    width: 200px;
+}
+.contact-section {
+    background-color: #7F2982;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.contact-section .contact-item {
+    margin: 10px 0;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #7F2982;
+    color: white;
+    font-size: 0.9rem;
+}
+
 @media only screen and (max-width: 1000px) {
     header {
         justify-content: center;
@@ -176,6 +276,7 @@ header img {
         text-align: center;
         width: 100%;
     }
+    
     @keyframes fade {
         0% {
             opacity: 0%;
@@ -233,5 +334,8 @@ header img {
     }
     #mission-image img {
         width: 350px;
+    }
+    .use-cases-container {
+        grid-template-columns: 1fr;
     }
 }
