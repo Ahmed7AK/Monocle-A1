@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
@@ -10,6 +11,7 @@ body {
     background-image: url('./images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
+    height: 5000px;
 }
 header {
     display: flex;
@@ -28,6 +30,9 @@ header img {
 #header-links a {
     font-size: 20px;
     font-weight: bold;
+}
+#mobile-menu {
+    color: white;
 }
 #hero-section {
     display: flex;
@@ -56,6 +61,9 @@ header img {
 #hero-links a{
     width: 200px;
 }
+#menu-button, #mobile-menu {
+    display: none;
+}
 #download-link {
     padding: 15px;
     background-color: #7F2982;
@@ -72,8 +80,158 @@ header img {
 #hero-img img{
     width: 300px;
 }
+#aboutus {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10% 15% 2% 15%;
+}
+#mission {
+    display: flex;
+    justify-content: space-between;
+   
+}
+#mission-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    width: auto;
+}
+#mission-text h2 {
+    font-size: 42px;
+    font-style: italic;
+    font-family: "IBM Plex Serif";
+}
+
+#mission-image img {
+    width: 400px;
+}
+#features-div {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 10% 0% 10%;
+}
+#features-div h1 {
+    padding: 50px;
+    text-align: center;
+}
+#features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#feature-card {
+    padding: 30px;
+    background-color: #246A73;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 240px;
+    height: 300px;
+    border-radius: 30px;
+}
+#feature-card h2 {
+    font-size: 18px;
+    text-align: center;
+}
+#feature-card p {
+    font-size: 14px;
+    text-align: center;
+}
 @media only screen and (max-width: 1000px) {
+    header {
+        justify-content: center;
+        margin: 0 5%;
+        gap: 50px;
+    }
+    #header-links {
+        display: none;
+    }
+    #menu-button {
+        display: block;
+        color: white;
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        right: 5%;
+    }
+    #mobile-menu {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #7f298246;
+
+    }
+   
+    #mobile-menu a {
+        font-size: 20px;
+        border-bottom: 2px solid #7F2982;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    @keyframes fade {
+        0% {
+            opacity: 0%;
+        }
+        20% {
+            opacity: 20%;
+        }
+        40% {
+            opacity: 40%;
+        }
+        60% {
+            opacity: 60%;
+        }
+        80% {
+            opacity: 80%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+
     #hero-section {
         flex-direction: column;
+        padding: 50px;
+        gap: 50px;
+        margin: 0 5%;
+    }
+    #hero-info {
+        gap: 50px;
+    }
+    #hero-text h1 {
+        font-size: 40px;
+    }
+    #hero-text h3 {
+        font-size: 16px;
+    }
+    #hero-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #hero-links a {
+        width: 200px;
+    }
+    #aboutus h1 {
+        font-size: 28px;
+    }
+    #mission {
+        padding-top: 50px;
+        flex-direction: column;
+    }
+    #mission-text {
+        width: auto;
+    }
+    #mission-image img {
+        width: 350px;
     }
 }
